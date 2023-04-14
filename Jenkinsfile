@@ -2,11 +2,11 @@ pipeline{
 
     agent any
 
-    stages{
+    stages {
 
         stages{'Git Checkout'}{
 
-            steps{
+            steps{ 
                 git branch: 'main', url: 'https://github.com/xyw3kLsi/bulaba.git'
             }
         }
