@@ -4,7 +4,7 @@ pipeline{
 
     stages {
 
-        stage{'Git Checkout'}{
+        stages{'Git Checkout'}{
 
             steps{ 
                 git branch: 'main', url: 'https://github.com/xyw3kLsi/bulaba.git'
