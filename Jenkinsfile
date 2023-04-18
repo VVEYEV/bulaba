@@ -2,9 +2,9 @@ pipeline{
 
     agent any
 
-    stages {
+    stages{
 
-        stages{'Git Checkout'}{
+        stage{'Git Checkout'}{
 
             steps{
                 
