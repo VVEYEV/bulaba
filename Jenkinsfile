@@ -30,7 +30,7 @@ pipeline{
                 
                 script{
 
-                    bat 'mvn verify DskipUnitTests'
+                    bat 'mvn verify -DskipUnitTests'
                 }
             }
         }
