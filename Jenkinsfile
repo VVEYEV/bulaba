@@ -67,7 +67,7 @@ pipeline{
         }
         stage('upload war file to nexus'){
 
-            steps}
+            steps{
 
                 script{
 
