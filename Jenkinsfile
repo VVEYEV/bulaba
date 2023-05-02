@@ -49,9 +49,9 @@ pipeline{
             steps{
                 
                 script{
-
                     withSonarQubeEnv(credentialsId: 'sonar-api-key') {    
                     bat 'mvn clean package sonar:sonar'
+                 }
                 }
             }
         }
