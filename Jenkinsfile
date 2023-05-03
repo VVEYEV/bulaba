@@ -92,5 +92,17 @@ pipeline{
                 }
             }
         }
+        stage('DOCKER Image Build'){
+
+            steps{
+                
+                script{
+
+                    bat 'docker image build -t $JOB_NAME:v1.$BUILD_ID'
+                    bat 'docker image tag $JOB_NAME:v1.$BUILD_ID lusteksolutions/$JOB_NAME:v1.$BUILD_ID'
+                    bat 'docker image tag $JOB_NAME:v1.$BUILD_ID lusteksolutions/$JOB_NAME:latest'
+                }
+            }
+        }
     }
 }
